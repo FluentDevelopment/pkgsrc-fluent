@@ -1,0 +1,47 @@
+@comment $NetBSD$
+${GEM_HOME}/cache/${GEM_NAME}.gem
+${GEM_LIBDIR}/.codeclimate.yml
+${GEM_LIBDIR}/.gitignore
+${GEM_LIBDIR}/.rspec
+${GEM_LIBDIR}/.rubocop.yml
+${GEM_LIBDIR}/.travis.yml
+${GEM_LIBDIR}/CHANGELOG.md
+${GEM_LIBDIR}/Gemfile
+${GEM_LIBDIR}/LICENSE
+${GEM_LIBDIR}/Manifest
+${GEM_LIBDIR}/README.md
+${GEM_LIBDIR}/Rakefile
+${GEM_LIBDIR}/lib/jwt.rb
+${GEM_LIBDIR}/lib/jwt/decode.rb
+${GEM_LIBDIR}/lib/jwt/error.rb
+${GEM_LIBDIR}/lib/jwt/json.rb
+${GEM_LIBDIR}/lib/jwt/verify.rb
+${GEM_LIBDIR}/lib/jwt/version.rb
+${GEM_LIBDIR}/ruby-jwt.gemspec
+${GEM_LIBDIR}/spec/fixtures/certs/ec256-private.pem
+${GEM_LIBDIR}/spec/fixtures/certs/ec256-public.pem
+${GEM_LIBDIR}/spec/fixtures/certs/ec256-wrong-private.pem
+${GEM_LIBDIR}/spec/fixtures/certs/ec256-wrong-public.pem
+${GEM_LIBDIR}/spec/fixtures/certs/ec384-private.pem
+${GEM_LIBDIR}/spec/fixtures/certs/ec384-public.pem
+${GEM_LIBDIR}/spec/fixtures/certs/ec384-wrong-private.pem
+${GEM_LIBDIR}/spec/fixtures/certs/ec384-wrong-public.pem
+${GEM_LIBDIR}/spec/fixtures/certs/ec512-private.pem
+${GEM_LIBDIR}/spec/fixtures/certs/ec512-public.pem
+${GEM_LIBDIR}/spec/fixtures/certs/ec512-wrong-private.pem
+${GEM_LIBDIR}/spec/fixtures/certs/ec512-wrong-public.pem
+${GEM_LIBDIR}/spec/fixtures/certs/rsa-1024-private.pem
+${GEM_LIBDIR}/spec/fixtures/certs/rsa-1024-public.pem
+${GEM_LIBDIR}/spec/fixtures/certs/rsa-2048-private.pem
+${GEM_LIBDIR}/spec/fixtures/certs/rsa-2048-public.pem
+${GEM_LIBDIR}/spec/fixtures/certs/rsa-2048-wrong-private.pem
+${GEM_LIBDIR}/spec/fixtures/certs/rsa-2048-wrong-public.pem
+${GEM_LIBDIR}/spec/fixtures/certs/rsa-4096-private.pem
+${GEM_LIBDIR}/spec/fixtures/certs/rsa-4096-public.pem
+${GEM_LIBDIR}/spec/integration/readme_examples_spec.rb
+${GEM_LIBDIR}/spec/jwt/verify_spec.rb
+${GEM_LIBDIR}/spec/jwt_spec.rb
+${GEM_LIBDIR}/spec/spec_helper.rb
+${GEM_HOME}/specifications/${GEM_NAME}.gemspec
+@pkgdir lib/ruby/gems/2.3.0/extensions
+@pkgdir lib/ruby/gems/2.3.0/build_info
