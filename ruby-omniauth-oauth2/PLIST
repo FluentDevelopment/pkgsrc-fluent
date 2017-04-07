@@ -1,0 +1,19 @@
+@comment $NetBSD$
+${GEM_HOME}/cache/${GEM_NAME}.gem
+${GEM_LIBDIR}/.gitignore
+${GEM_LIBDIR}/.rspec
+${GEM_LIBDIR}/.rubocop.yml
+${GEM_LIBDIR}/.travis.yml
+${GEM_LIBDIR}/Gemfile
+${GEM_LIBDIR}/LICENSE.md
+${GEM_LIBDIR}/README.md
+${GEM_LIBDIR}/Rakefile
+${GEM_LIBDIR}/lib/omniauth-oauth2.rb
+${GEM_LIBDIR}/lib/omniauth-oauth2/version.rb
+${GEM_LIBDIR}/lib/omniauth/strategies/oauth2.rb
+${GEM_LIBDIR}/omniauth-oauth2.gemspec
+${GEM_LIBDIR}/spec/helper.rb
+${GEM_LIBDIR}/spec/omniauth/strategies/oauth2_spec.rb
+${GEM_HOME}/specifications/${GEM_NAME}.gemspec
+@pkgdir lib/ruby/gems/2.3.0/extensions
+@pkgdir lib/ruby/gems/2.3.0/build_info
