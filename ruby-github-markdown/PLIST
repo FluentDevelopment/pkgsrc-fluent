@@ -1,0 +1,30 @@
+@comment $NetBSD$
+${GEM_HOME}/cache/${GEM_NAME}.gem
+${GEM_EXTSDIR}/gem.build_complete
+${GEM_EXTSDIR}/github/markdown.${RUBY_DLEXT}
+${GEM_LIBDIR}/Rakefile
+${GEM_LIBDIR}/bin/gfm
+${GEM_LIBDIR}/ext/markdown/autolink.c
+${GEM_LIBDIR}/ext/markdown/autolink.h
+${GEM_LIBDIR}/ext/markdown/buffer.c
+${GEM_LIBDIR}/ext/markdown/buffer.h
+${GEM_LIBDIR}/ext/markdown/extconf.rb
+${GEM_LIBDIR}/ext/markdown/gh-markdown.c
+${GEM_LIBDIR}/ext/markdown/houdini.h
+${GEM_LIBDIR}/ext/markdown/houdini_href_e.c
+${GEM_LIBDIR}/ext/markdown/houdini_html_e.c
+${GEM_LIBDIR}/ext/markdown/html.c
+${GEM_LIBDIR}/ext/markdown/html.h
+${GEM_LIBDIR}/ext/markdown/html_blocks.h
+${GEM_LIBDIR}/ext/markdown/markdown.c
+${GEM_LIBDIR}/ext/markdown/markdown.h
+${GEM_LIBDIR}/ext/markdown/plaintext.c
+${GEM_LIBDIR}/ext/markdown/plaintext.h
+${GEM_LIBDIR}/ext/markdown/stack.c
+${GEM_LIBDIR}/ext/markdown/stack.h
+${GEM_LIBDIR}/github-markdown.gemspec
+${GEM_LIBDIR}/lib/github/markdown.rb
+${GEM_LIBDIR}/lib/github/markdown.${RUBY_DLEXT}
+${GEM_LIBDIR}/test/gfm_test.rb
+${GEM_HOME}/specifications/${GEM_NAME}.gemspec
+@pkgdir lib/ruby/gems/2.3.0/build_info
