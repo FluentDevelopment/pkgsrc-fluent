@@ -1,0 +1,24 @@
+@comment $NetBSD$
+${GEM_HOME}/cache/${GEM_NAME}.gem
+${GEM_LIBDIR}/.document
+${GEM_LIBDIR}/CONTRIBUTING.md
+${GEM_LIBDIR}/LICENSE.md
+${GEM_LIBDIR}/README.md
+${GEM_LIBDIR}/lib/oauth2.rb
+${GEM_LIBDIR}/lib/oauth2/access_token.rb
+${GEM_LIBDIR}/lib/oauth2/authenticator.rb
+${GEM_LIBDIR}/lib/oauth2/client.rb
+${GEM_LIBDIR}/lib/oauth2/error.rb
+${GEM_LIBDIR}/lib/oauth2/mac_token.rb
+${GEM_LIBDIR}/lib/oauth2/response.rb
+${GEM_LIBDIR}/lib/oauth2/strategy/assertion.rb
+${GEM_LIBDIR}/lib/oauth2/strategy/auth_code.rb
+${GEM_LIBDIR}/lib/oauth2/strategy/base.rb
+${GEM_LIBDIR}/lib/oauth2/strategy/client_credentials.rb
+${GEM_LIBDIR}/lib/oauth2/strategy/implicit.rb
+${GEM_LIBDIR}/lib/oauth2/strategy/password.rb
+${GEM_LIBDIR}/lib/oauth2/version.rb
+${GEM_LIBDIR}/oauth2.gemspec
+${GEM_HOME}/specifications/${GEM_NAME}.gemspec
+@pkgdir lib/ruby/gems/2.3.0/extensions
+@pkgdir lib/ruby/gems/2.3.0/build_info
