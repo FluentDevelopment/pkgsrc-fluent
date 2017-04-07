@@ -1,0 +1,21 @@
+@comment $NetBSD$
+${GEM_HOME}/cache/${GEM_NAME}.gem
+${GEM_LIBDIR}/LICENSE
+${GEM_LIBDIR}/Readme.md
+${GEM_LIBDIR}/lib/omnigollum.rb
+${GEM_LIBDIR}/public/images/bitly_logo.png
+${GEM_LIBDIR}/public/images/blogger_logo.png
+${GEM_LIBDIR}/public/images/facebook_logo.png
+${GEM_LIBDIR}/public/images/github_logo.png
+${GEM_LIBDIR}/public/images/google_logo.png
+${GEM_LIBDIR}/public/images/omniauth_logo.png
+${GEM_LIBDIR}/public/images/open_id_logo.png
+${GEM_LIBDIR}/public/images/twitter_logo.png
+${GEM_LIBDIR}/public/images/youtube_logo.png
+${GEM_LIBDIR}/templates/Error.mustache
+${GEM_LIBDIR}/templates/Login.mustache
+${GEM_LIBDIR}/views/error.rb
+${GEM_LIBDIR}/views/login.rb
+${GEM_HOME}/specifications/${GEM_NAME}.gemspec
+@pkgdir lib/ruby/gems/2.3.0/extensions
+@pkgdir lib/ruby/gems/2.3.0/build_info
