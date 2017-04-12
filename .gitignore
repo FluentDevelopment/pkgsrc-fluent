@@ -1,0 +1,14 @@
+# pkgsrc's work dir
+*/work
+# OBJHOSTNAME=yes use-case
+*/work.*
+
+# Temporary files
+*~
+\#*\#
+*.orig
+*.core
+*.*.swp
+
+# CVS leftovers
+CVS
