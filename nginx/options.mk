@@ -5,7 +5,7 @@ PKG_SUPPORTED_OPTIONS=	dav flv gtools inet6 luajit mail-proxy memcache naxsi \
 			pcre push realip ssl sub uwsgi image-filter \
 			debug status nginx-autodetect-cflags echo \
 			set-misc headers-more array-var encrypted-session \
-			form-input perl gzip v2 spdy
+			form-input perl gzip v2 spdy brotli
 
 PKG_SUGGESTED_OPTIONS=	inet6 pcre ssl
 
@@ -226,4 +226,21 @@ V2SPDY_PATCH=		nginx-1.9.15-spdy.patch
 PATCHFILES+=		${V2SPDY_PATCH}
 SITES.${V2SPDY_PATCH}=	https://gist.githubusercontent.com/felixbuenemann/44d53b911ebfc2a4ff2b951e49923da8/raw/65fe22435b3b65a8e8cb03587e06160aec3d6f3c
 PATCH_DIST_STRIP.${V2SPDY_PATCH}= -p1
+.endif
+
+.if !empty(PKG_OPTIONS:Mbrotli)
+CONFIGURE_ARGS+=	--add-module=../${NGX_BROTLI_DISTNAME}
+.endif
+.if !empty(PKG_OPTIONS:Mbrotli) || make(makesum)
+NGX_BROTLI_VERSION=		master
+NGX_BROTLI_DISTNAME=	ngx_brotli-${NGX_BROTLI_VERSION}
+NGX_BROTLI_DISTFILE=	${NGX_BROTLI_DISTNAME}.tar.gz
+SITES.${NGX_BROTLI_DISTFILE}=	-https://github.com/FluentDevelopment/ngx_brotli/archive/${NGX_BROTLI_VERSION}.tar.gz
+BROTLI_VERSION=		0.6.0
+BROTLI_DISTNAME=	Brotli-${BROTLI_VERSION}
+BROTLI_DISTFILE=	Brotli-${BROTLI_VERSION}.tar.gz
+SITES.${BROTLI_DISTFILE}=	-https://github.com/google/brotli/releases/download/v${BROTLI_VERSION}/${BROTLI_DISTFILE}
+DISTFILES+=		${NGX_BROTLI_DISTFILE} ${BROTLI_DISTFILE}
+pre-configure:
+	cd ${WRKDIR}/${NGX_BROTLI_DISTNAME}/deps && rm -rf brotli && ln -s ../../${BROTLI_DISTNAME} brotli
 .endif

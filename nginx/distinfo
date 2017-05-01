@@ -1,5 +1,9 @@
-$NetBSD: distinfo,v 1.55 2017/02/14 10:12:35 fhajny Exp $
+$NetBSD$
 
+SHA1 (Brotli-0.6.0.tar.gz) = 2ec90415599911c5c9d3ae6918c40a1a8e181ae1
+RMD160 (Brotli-0.6.0.tar.gz) = f0f0ff11bdd6b5a4734f3fa164f5fa7b34c7c432
+SHA512 (Brotli-0.6.0.tar.gz) = 042321edf803a24afd7676228f06f55810cb4843211dd17e30ba8e214e1a43ebdeb3a04ef6c326cf03bcfca46a29db70d735fe9e092b6a8eee2757777fff81b6
+Size (Brotli-0.6.0.tar.gz) = 416444 bytes
 SHA1 (array-var-nginx-module-0.04.tar.gz) = 1fd3bdd05c2d1d7667ed6f7baa612ddf7f630df3
 RMD160 (array-var-nginx-module-0.04.tar.gz) = a751a2ce87dcfb88d072779097b4df9f42a415e4
 SHA512 (array-var-nginx-module-0.04.tar.gz) = a45905338d2fdac002eaa43f7bff1fa48edcdcf9299de5c47725c2f6d86830f390fbdefc0ebe7492222e53de113439ea754ce63e20dc0245cf82e3247bb855f2
@@ -40,6 +44,10 @@ SHA1 (nginx_http_push_module-0.731.tar.gz) = 353f3ef3d013edfcc78ddba0237a9ce7dca
 RMD160 (nginx_http_push_module-0.731.tar.gz) = d35d7138d3b4dd20076b1026c420f03c68177f99
 SHA512 (nginx_http_push_module-0.731.tar.gz) = b95e6e88236d920e18c927a5bdf7d84210ba34b234e7c20ba09d114337a4494535c94c7e84926e5479b23d4eba4e2f1db0a3e7d8b017c9907a4a824cd25098d8
 Size (nginx_http_push_module-0.731.tar.gz) = 50346 bytes
+SHA1 (ngx_brotli-master.tar.gz) = 5c1dfbd54fa57abc65d07dae6ff6a983bb6f6f3e
+RMD160 (ngx_brotli-master.tar.gz) = 045a2c2ad9744bebcbfa93f39b9fde071cb36d26
+SHA512 (ngx_brotli-master.tar.gz) = f545064876df672da5423fd95836334069f0c03cc416f4fcfcae52dd2d79ca32e7f5c8d9a7e45060bb5e5aec1a712300298bf1622408ae99d5b5f6e8c48ae1e5
+Size (ngx_brotli-master.tar.gz) = 10613 bytes
 SHA1 (ngx_devel_kit-0.3.0.tar.gz) = b556d068db23037be30436af559795f45dd93c67
 RMD160 (ngx_devel_kit-0.3.0.tar.gz) = beb2736eb06e8e26f60643623553789346f653da
 SHA512 (ngx_devel_kit-0.3.0.tar.gz) = 558764c9be913a4f61d0e277d07bf3c272e1ce086b3fadb85b693a7e92805cd9fca4da7a8d29c96e53fc0d23b331327d3b2561ff61f19d2330e7d5d35ac7d614
