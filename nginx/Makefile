@@ -4,4 +4,4 @@ DISTNAME=		nginx-1.10.3
 MAINTAINER=		joerg@NetBSD.org
 
 PKGREVISION=		1fd1
-.include "../../wip/nginx/Makefile.common"
+.include "../../fluent/nginx/Makefile.common"
