@@ -1,7 +1,9 @@
 # $NetBSD: Makefile,v 1.230 2017/01/26 16:31:57 jperkin Exp $
 
 DISTNAME=	openssl-1.0.2k
-PKGREVISION=	1fd1
+FLUENTREVISION=	1
+PKGNAME=	${DISTNAME:C/$/fd${FLUENTREVISION}/}
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://www.openssl.org/source/
 
