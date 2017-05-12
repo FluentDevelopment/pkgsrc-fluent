@@ -4,7 +4,7 @@ DISTNAME=	nokogiri-1.6.8.1
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/nokogiri/nokogiri16/}
 CATEGORIES=	textproc
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	http://nokogiri.org/
 COMMENT=	HTML, XML, SAX, and Reader parser with XPath and CSS selector support
 LICENSE=	mit

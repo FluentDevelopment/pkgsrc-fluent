@@ -3,7 +3,7 @@
 DISTNAME=	rails-${RUBY_RAILS_VERSION}
 CATEGORIES=	www
 
-MAINTAINER=	minskim@NetBSD.org
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	http://www.rubyonrails.org/
 COMMENT=	Full-stack web application framework, Rails 4.2
 LICENSE=	mit

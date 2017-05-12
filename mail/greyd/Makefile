@@ -5,7 +5,7 @@ CATEGORIES=		mail
 MASTER_SITES=		${MASTER_SITE_GITHUB:=mikey-austin/}
 GITHUB_TAG=		v${PKGVERSION_NOREV}
 
-MAINTAINER=		timshel@fluentdevelopment.com.au
+MAINTAINER=		pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=		http://greyd.org/
 LICENSE=		isc
 COMMENT=		Portable, firewall-integrated SMTP spam deferral & greylisting daemon

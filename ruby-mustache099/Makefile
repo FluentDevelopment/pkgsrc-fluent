@@ -4,7 +4,7 @@ DISTNAME=	mustache-0.99.8
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/mustache/mustache099/}
 CATEGORIES=	devel
 
-MAINTAINER=	nils@NetBSD.org
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	https://mustache.github.io/
 COMMENT=	Logic-less Ruby templates
 LICENSE=	mit

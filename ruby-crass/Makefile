@@ -3,7 +3,7 @@
 DISTNAME=	crass-1.0.2
 CATEGORIES=	devel
 
-MAINTAINER=	timshel@fluentdevelopment.com.au
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	https://github.com/rgrove/crass/
 COMMENT=	A pure Ruby CSS 3 parser
 LICENSE=	mit

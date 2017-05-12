@@ -4,7 +4,7 @@ DISTNAME=	arel-6.0.4
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:C/(-[0-9])/6\1/}
 CATEGORIES=	databases
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	http://github.com/rails/arel
 COMMENT=	Arel is a SQL AST manager for Ruby
 LICENSE=	mit

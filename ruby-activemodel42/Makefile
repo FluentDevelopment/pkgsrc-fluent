@@ -3,7 +3,7 @@
 DISTNAME=	activemodel-${RUBY_RAILS_VERSION}
 CATEGORIES=	devel
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	http://www.rubyonrails.org/
 COMMENT=	Toolkit for building modeling frameworks (part of Rails 4.2)
 LICENSE=	mit

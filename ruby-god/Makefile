@@ -3,7 +3,7 @@
 DISTNAME=	god-0.13.7
 CATEGORIES=	sysutils
 
-MAINTAINER=	timshel@fluentdevelopment.com.au
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	https://github.com/gollum/gollum/wiki
 COMMENT=	An easy to configure, easy to extend monitoring framework written in Ruby
 LICENSE=	mit

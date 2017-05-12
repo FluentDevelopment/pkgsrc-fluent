@@ -3,7 +3,7 @@
 DISTNAME=	nokogumbo-1.4.10
 CATEGORIES=	textproc
 
-MAINTAINER=	timshel@fluentdevelopment.com.au
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	https://github.com/rubys/nokogumbo/#readme
 COMMENT=	Ruby nokogiri module for Gumbo HTML5 parser
 LICENSE=	apache-2.0

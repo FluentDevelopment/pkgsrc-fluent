@@ -3,7 +3,7 @@
 DISTNAME=		nginx-1.10.3
 FLUENTREVISION=		1
 PKGNAME=		${DISTNAME:C/$/fd${FLUENTREVISION}/}
-MAINTAINER=		joerg@NetBSD.org
+MAINTAINER=		pkgsrc@fluentdevelopment.com.au
 
 PKGREVISION= 1
 .include "../../fluent/nginx/Makefile.common"

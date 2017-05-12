@@ -3,7 +3,7 @@
 DISTNAME=	rake-compiler-1.0.3
 CATEGORIES=	devel
 
-MAINTAINER=	timshel@fluentdevelopment.com.au
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	https://github.com/rake-compiler/rake-compiler
 COMMENT=	A standard and simplified way to build and package Ruby extensions using Rake
 LICENSE=	mit

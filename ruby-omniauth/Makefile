@@ -3,7 +3,7 @@
 DISTNAME=	omniauth-1.6.1
 CATEGORIES=	security
 
-MAINTAINER=	timshel@fluentdevelopment.com.au
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	http://github.com/intridea/omniauth
 COMMENT=	A generalized Rack framework for multiple-provider authentication
 LICENSE=	mit

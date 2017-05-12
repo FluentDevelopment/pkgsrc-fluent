@@ -3,7 +3,7 @@
 DISTNAME=	github-markup-1.6.0
 CATEGORIES=	www
 
-MAINTAINER=	timshel@fluentdevelopment.com.au
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	https://github.com/github/markup
 COMMENT=	The code Github use to render README
 LICENSE=	mit

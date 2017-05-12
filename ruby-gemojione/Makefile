@@ -3,7 +3,7 @@
 DISTNAME=	gemojione-3.2.0
 CATEGORIES=	www
 
-MAINTAINER=	timshel@fluentdevelopment.com.au
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	http://github.com/jonathanwiesel/gemojione
 COMMENT=	A gem for EmojiOne
 LICENSE=	mit

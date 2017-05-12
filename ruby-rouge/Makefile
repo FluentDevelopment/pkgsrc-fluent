@@ -3,7 +3,7 @@
 DISTNAME=	rouge-2.0.7
 CATEGORIES=	www
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	http://rouge.jneen.net/
 COMMENT=	Pure-ruby colorizer based on pygments
 LICENSE=	mit

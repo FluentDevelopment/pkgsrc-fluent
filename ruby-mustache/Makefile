@@ -3,7 +3,7 @@
 DISTNAME=	mustache-1.0.5
 CATEGORIES=	devel
 
-MAINTAINER=	nils@NetBSD.org
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	https://mustache.github.io/
 COMMENT=	Logic-less Ruby templates
 LICENSE=	mit

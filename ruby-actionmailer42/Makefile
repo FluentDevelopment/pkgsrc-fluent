@@ -3,7 +3,7 @@
 DISTNAME=	actionmailer-${RUBY_RAILS_VERSION}
 CATEGORIES=	mail devel
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	http://www.rubyonrails.org/
 COMMENT=	Email composition, delivery, and receiving (for Rails 4.2)
 LICENSE=	mit

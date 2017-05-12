@@ -4,7 +4,7 @@ DISTNAME=	kramdown-1.9.0
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/kramdown/kramdown19/}
 CATEGORIES=	textproc
 
-MAINTAINER=	timshel@fluentdevelopment.com.au
+MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	http://kramdown.gettalong.org/
 COMMENT=	Pure-Ruby Markdown-superset parser and converter
 LICENSE=	mit
