@@ -11,6 +11,8 @@ DIST_SUBDIR=		${PROJECT}
 GIT_REPOSITORIES=	${PROJECT}
 GIT_REPO.${PROJECT}=	git://github.com/google/${PROJECT}.git
 GIT_TAG.${PROJECT}=	v${VERSION}
+GIT_REVISION.${PROJECT}=46c1a881b41bb638c76247558aa04b1591af3aa7
+PKGREVISION=
 
 MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=	https://github.com/google/brotli/
