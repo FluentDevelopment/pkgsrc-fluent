@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.8 2016/11/24 11:35:23 maya Exp $
+# $NetBSD: Makefile.common,v 1.10 2017/06/29 12:20:05 fhajny Exp $
 # used by www/nginx/Makefile
 # used by www/nginx-devel/Makefile
 
@@ -60,8 +60,7 @@ EGFILES+=		fastcgi.conf fastcgi_params koi-utf koi-win \
 .for file in ${EGFILES}
 CONF_FILES+=	${EGDIR}/conf/${file} ${PKG_SYSCONFDIR}/${file}
 .	if !empty(PKG_OPTIONS:Mnaxsi)
-CONF_FILES+=	${EGDIR}/conf/naxsi_core.rules
-CONF_FILES+=	${PKG_SYSCONFDIR}/naxsi_core.rules
+CONF_FILES+=	${EGDIR}/conf/naxsi_core.rules ${PKG_SYSCONFDIR}/naxsi_core.rules
 .	endif
 .endfor
 
@@ -108,7 +107,7 @@ do-install:
 .endfor
 	${INSTALL_DATA} ${WRKSRC}/html/50x.html ${DESTDIR}${EGDIR}/html/50x.html
 	${INSTALL_DATA} ${WRKSRC}/html/index.html ${DESTDIR}${EGDIR}/html/index.html
-	${INSTALL_MAN} ${WRKSRC}/man/nginx.8 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man8
+	${INSTALL_MAN} ${WRKSRC}/objs/nginx.8 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man8
 .if !empty(PKG_OPTIONS:Mnaxsi)
 	${INSTALL_DATA} ${WRKDIR}/${NAXSI_DISTNAME}/naxsi_config/naxsi_core.rules ${DESTDIR}${EGDIR}/conf
 .endif

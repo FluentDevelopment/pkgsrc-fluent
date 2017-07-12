@@ -1,11 +1,12 @@
-# $NetBSD: options.mk,v 1.36 2016/06/15 14:49:11 fhajny Exp $
+# $NetBSD: options.mk,v 1.39 2017/05/02 12:28:31 fhajny Exp $
 
-PKG_OPTIONS_VAR=	PKG_OPTIONS.nginx
-PKG_SUPPORTED_OPTIONS=	dav flv gtools inet6 luajit mail-proxy memcache naxsi \
-			pcre push realip ssl sub uwsgi image-filter \
-			debug status nginx-autodetect-cflags echo \
-			set-misc headers-more array-var encrypted-session \
-			form-input perl gzip v2 spdy brotli
+PKG_OPTIONS_VAR=		PKG_OPTIONS.nginx
+PKG_SUPPORTED_OPTIONS=		dav flv gtools inet6 luajit mail-proxy memcache naxsi \
+				pcre push realip ssl sub uwsgi image-filter \
+				debug status nginx-autodetect-cflags echo \
+				set-misc headers-more array-var encrypted-session \
+				form-input perl gzip http2 spdy brotli
+PKG_OPTIONS_LEGACY_OPTS+=	v2:http2
 
 PKG_SUGGESTED_OPTIONS=	inet6 pcre ssl
 
@@ -45,7 +46,7 @@ CONFIGURE_ARGS+=	--with-http_dav_module
 CONFIGURE_ARGS+=	--with-http_flv_module
 .endif
 
-.if !empty(PKG_OPTIONS:Mv2)
+.if !empty(PKG_OPTIONS:Mhttp2)
 CONFIGURE_ARGS+=	--with-http_v2_module
 .endif
 
@@ -67,7 +68,7 @@ CONFIGURE_ARGS+=	--without-http_memcached_module
 .endif
 
 .if !empty(PKG_OPTIONS:Mnaxsi) || make(makesum)
-NAXSI_VERSION=			0.54
+NAXSI_VERSION=			0.55.3
 NAXSI_DISTNAME=			naxsi-${NAXSI_VERSION}
 NAXSI_DISTFILE=			${NAXSI_DISTNAME}.tar.gz
 SITES.${NAXSI_DISTFILE}=	-https://github.com/nbs-system/naxsi/archive/${NAXSI_VERSION}.tar.gz
@@ -221,7 +222,7 @@ CONFIGURE_ARGS+=	--with-http_gzip_static_module
 CONFIGURE_ARGS+=	--with-http_spdy_module
 .endif
 
-.if !empty(PKG_OPTIONS:Mspdy) && !empty(PKG_OPTIONS:Mv2) || make(makesum)
+.if !empty(PKG_OPTIONS:Mspdy) || make(makesum)
 V2SPDY_PATCH=		nginx-1.9.15-spdy.patch
 PATCHFILES+=		${V2SPDY_PATCH}
 SITES.${V2SPDY_PATCH}=	https://gist.githubusercontent.com/felixbuenemann/44d53b911ebfc2a4ff2b951e49923da8/raw/65fe22435b3b65a8e8cb03587e06160aec3d6f3c
