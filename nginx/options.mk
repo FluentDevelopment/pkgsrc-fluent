@@ -223,9 +223,9 @@ CONFIGURE_ARGS+=	--with-http_spdy_module
 .endif
 
 .if !empty(PKG_OPTIONS:Mspdy) || make(makesum)
-V2SPDY_PATCH=		nginx-1.9.15-spdy.patch
+V2SPDY_PATCH=		nginx__1.11.11_http2_spdy.patch
 PATCHFILES+=		${V2SPDY_PATCH}
-SITES.${V2SPDY_PATCH}=	https://gist.githubusercontent.com/felixbuenemann/44d53b911ebfc2a4ff2b951e49923da8/raw/65fe22435b3b65a8e8cb03587e06160aec3d6f3c
+SITES.${V2SPDY_PATCH}=	https://github.com/cloudflare/sslconfig/raw/master/patches/
 PATCH_DIST_STRIP.${V2SPDY_PATCH}= -p1
 .endif
 
