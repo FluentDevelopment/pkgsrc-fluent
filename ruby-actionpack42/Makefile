@@ -12,7 +12,7 @@ LICENSE=	mit
 #DEPENDS+=	${RUBY_ACTIVESUPPORT_DEPENDS}
 DEPENDS+=	${RUBY_ACTIVEMODEL_DEPENDS}
 #DEPENDS+=	${RUBY_PKGPREFIX}-builder>=3.0.0<3.1:../../textproc/ruby-builder
-DEPENDS+=	${RUBY_PKGPREFIX}-rack>=1.6.1<1.7:../../www/ruby-rack
+DEPENDS+=	${RUBY_PKGPREFIX}-rack16>=1.6.1<1.7:../../www/ruby-rack16
 DEPENDS+=	${RUBY_PKGPREFIX}-rack-cache>=1.2<2:../../www/ruby-rack-cache
 DEPENDS+=	${RUBY_PKGPREFIX}-rack-test>=0.6.1<0.7:../../www/ruby-rack-test
 #DEPENDS+=	${RUBY_PKGPREFIX}-journey>=1.0.4<1.1:../../www/ruby-journey
