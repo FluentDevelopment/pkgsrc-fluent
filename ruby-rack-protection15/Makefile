@@ -10,7 +10,7 @@ COMMENT=	Protection for against typical web attacks for Rack application
 LICENSE=	mit
 
 # Prefer rack v1.6
-DEPENDS+=	${RUBY_PKGPREFIX}-rack>=0:../../www/ruby-rack16
+DEPENDS+=	${RUBY_PKGPREFIX}-rack16>=0:../../www/ruby-rack16
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"
