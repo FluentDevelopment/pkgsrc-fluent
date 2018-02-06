@@ -8,7 +8,7 @@ HOMEPAGE=	https://github.com/brianmario/charlock_holmes
 COMMENT=	Binary and text detection as well as text transcoding using libicu
 LICENSE=	mit
 
-DEPENDS+=	${RUBY_PKGPREFIX}-chardet>=0:../../fluent/ruby-charlock_holmes
+DEPENDS+=	${RUBY_PKGPREFIX}-chardet>=0:../../fluent/ruby-chardet
 DEPENDS+=	${RUBY_PKGPREFIX}-minitest>=0:../../devel/ruby-minitest
 DEPENDS+=	${RUBY_PKGPREFIX}-rake-compiler>=0.7.5:../../fluent/ruby-rake-compiler
 
