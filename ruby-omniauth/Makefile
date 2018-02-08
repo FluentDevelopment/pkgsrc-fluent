@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	omniauth-1.6.1
+DISTNAME=	omniauth-1.8.1
 CATEGORIES=	security
 
 MAINTAINER=	pkgsrc@fluentdevelopment.com.au
