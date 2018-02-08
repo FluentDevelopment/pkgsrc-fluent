@@ -1,5 +1,5 @@
 @comment $NetBSD$
-bin/gollum23
+bin/gollum${RUBY_SUFFIX}
 ${GEM_HOME}/cache/${GEM_NAME}.gem
 ${GEM_LIBDIR}/CONTRIBUTING.md
 ${GEM_LIBDIR}/Gemfile
@@ -7,7 +7,7 @@ ${GEM_LIBDIR}/HISTORY.md
 ${GEM_LIBDIR}/LICENSE
 ${GEM_LIBDIR}/README.md
 ${GEM_LIBDIR}/Rakefile
-${GEM_LIBDIR}/bin/gollum23
+${GEM_LIBDIR}/bin/gollum${RUBY_SUFFIX}
 ${GEM_LIBDIR}/config.rb
 ${GEM_LIBDIR}/config.ru
 ${GEM_LIBDIR}/contrib/openrc/conf.d/gollum
