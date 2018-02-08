@@ -1,6 +1,6 @@
 $NetBSD$
 
-SHA1 (omniauth-google-oauth2-0.4.1.gem) = a1dc8cce08217ad9b691802e28b90d2162c7a2dd
-RMD160 (omniauth-google-oauth2-0.4.1.gem) = 341931dd53255f98b51a74cebc4cfdc2518a3fe2
-SHA512 (omniauth-google-oauth2-0.4.1.gem) = d4f6b3a484143ec67673eb11fcfd4a0d2336955f9b9f9ddd3c70410c05996be2d30448d80836c5c055f242ee1a7d8ad782359306a59de026cfd54a73c00391c8
-Size (omniauth-google-oauth2-0.4.1.gem) = 18944 bytes
+SHA1 (omniauth-google-oauth2-0.5.3.gem) = c4cc22bbca5c128f00a8bfed532f207212d3a4f1
+RMD160 (omniauth-google-oauth2-0.5.3.gem) = bf60151e2bdf292f2ad96faf0acafd0b76f16e78
+SHA512 (omniauth-google-oauth2-0.5.3.gem) = 9431600835308b9cabe83ab53e401d3e089884f49611478977aa3a259ef78bbc40262c4d851831dd3dda51447e93808f7b246ea7e2b0a97e4dafd60f7ce8f381
+Size (omniauth-google-oauth2-0.5.3.gem) = 20992 bytes

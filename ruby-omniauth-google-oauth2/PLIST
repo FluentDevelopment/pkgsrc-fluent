@@ -1,13 +1,13 @@
 @comment $NetBSD$
 ${GEM_HOME}/cache/${GEM_NAME}.gem
 ${GEM_LIBDIR}/.gitignore
+${GEM_LIBDIR}/.rubocop.yml
 ${GEM_LIBDIR}/.travis.yml
 ${GEM_LIBDIR}/CHANGELOG.md
 ${GEM_LIBDIR}/Gemfile
 ${GEM_LIBDIR}/README.md
 ${GEM_LIBDIR}/Rakefile
 ${GEM_LIBDIR}/examples/Gemfile
-${GEM_LIBDIR}/examples/auth.js
 ${GEM_LIBDIR}/examples/config.ru
 ${GEM_LIBDIR}/examples/omni_auth.rb
 ${GEM_LIBDIR}/lib/omniauth-google-oauth2.rb
@@ -16,6 +16,7 @@ ${GEM_LIBDIR}/lib/omniauth/google_oauth2/version.rb
 ${GEM_LIBDIR}/lib/omniauth/strategies/google_oauth2.rb
 ${GEM_LIBDIR}/omniauth-google-oauth2.gemspec
 ${GEM_LIBDIR}/spec/omniauth/strategies/google_oauth2_spec.rb
+${GEM_LIBDIR}/spec/rubocop_spec.rb
 ${GEM_LIBDIR}/spec/spec_helper.rb
 ${GEM_HOME}/specifications/${GEM_NAME}.gemspec
 @pkgdir lib/ruby/gems/2.3.0/extensions
