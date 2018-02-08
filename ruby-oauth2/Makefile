@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	oauth2-1.3.1
+DISTNAME=	oauth2-1.4.0
 CATEGORIES=	security
 
 MAINTAINER=	pkgsrc@fluentdevelopment.com.au
