@@ -1,5 +1,5 @@
 @comment $NetBSD$
-bin/rougify23
+bin/rougify${RUBY_SUFFIX}
 ${GEM_HOME}/cache/${GEM_NAME}.gem
 ${GEM_LIBDIR}/Gemfile
 ${GEM_LIBDIR}/LICENSE
