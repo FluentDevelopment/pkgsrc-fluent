@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	rouge-2.0.7
+DISTNAME=	rouge-2.2.1
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc@fluentdevelopment.com.au

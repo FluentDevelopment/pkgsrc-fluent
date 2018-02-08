@@ -9,7 +9,7 @@ HOMEPAGE=	https://github.com/rgrove/sanitize/
 COMMENT=	Sanitize is a whitelist-based HTML and CSS sanitizer
 LICENSE=	mit
 
-DEPENDS+=       ${RUBY_PKGPREFIX}-nokogiri16>=1.4.4:../../fluent/ruby-nokogiri16
+DEPENDS+=       ${RUBY_PKGPREFIX}-nokogiri>=1.4.4:../../textproc/ruby-nokogiri
 
 RUBY_RDOC_REQD=	3.0
 
