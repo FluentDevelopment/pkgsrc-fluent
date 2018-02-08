@@ -1,6 +1,6 @@
 $NetBSD$
 
-SHA1 (omniauth-oauth2-1.4.0.gem) = e0f16b8e94e4787854dce91ef99801c34e4cc423
-RMD160 (omniauth-oauth2-1.4.0.gem) = a932847d2446d9dd815231eee32f0ee0dc11cead
-SHA512 (omniauth-oauth2-1.4.0.gem) = cc0fb6b700f8b0e76a9441527234babcb2483dfb5a1604c16c6947df99967dd028aea183b25aee3f2f78c4e39f3ba74a99d3f99849e7ce827d7f2fb8c54bc5fe
-Size (omniauth-oauth2-1.4.0.gem) = 10240 bytes
+SHA1 (omniauth-oauth2-1.5.0.gem) = cce84982adb72646fd2f263f0d8505f63591307a
+RMD160 (omniauth-oauth2-1.5.0.gem) = 4fb03861b5c18f2673c607820e85a05daafcdcaa
+SHA512 (omniauth-oauth2-1.5.0.gem) = 5e75e265178c737105a03d0bde9120db2adcc2fd2ec9db94afcbec9136c7b25af8d0739538528129be07d91e021cba3e484140e4cf613e5ea5224367b89f36cd
+Size (omniauth-oauth2-1.5.0.gem) = 10240 bytes

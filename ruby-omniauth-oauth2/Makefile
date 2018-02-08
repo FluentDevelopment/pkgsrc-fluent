@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	omniauth-oauth2-1.4.0
+DISTNAME=	omniauth-oauth2-1.5.0
 CATEGORIES=	security
 
 MAINTAINER=	pkgsrc@fluentdevelopment.com.au
@@ -9,7 +9,7 @@ COMMENT=	An abstract OAuth2 strategy for OmniAuth
 LICENSE=	mit
 
 DEPENDS+=	${RUBY_PKGPREFIX}-omniauth>=1.2<2:../../fluent/ruby-omniauth
-DEPENDS+=	${RUBY_PKGPREFIX}-oauth2>=1.0<2:../../fluent/ruby-oauth2
+DEPENDS+=	${RUBY_PKGPREFIX}-oauth2>=1.1<2:../../fluent/ruby-oauth2
 
 RUBY_RDOC_REQD=	3.0
 
