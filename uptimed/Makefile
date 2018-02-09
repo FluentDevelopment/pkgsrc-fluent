@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-DISTNAME=	uptimed-0.3.17
+DISTNAME=	uptimed-0.4.0
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_GITHUB:=rpodgorny/}
 GITHUB_TAG=	v${PKGVERSION_NOREV}
@@ -34,7 +34,10 @@ pre-configure:
 	set -e; cd ${WRKSRC}; \
 	aclocal; autoheader; libtoolize; automake -a --foreign -i; autoconf
 
-post-install:
+do-install:
+	set -e; cd ${WRKSRC}/libuptimed; ${MAKE_PROGRAM} install DESTDIR=${DESTDIR}
+	set -e; cd ${WRKSRC}/src; ${MAKE_PROGRAM} install DESTDIR=${DESTDIR}
+	set -e; cd ${WRKSRC}/man; ${MAKE_PROGRAM} install DESTDIR=${DESTDIR}
 	${INSTALL_DATA} ${WRKSRC}/etc/uptimed.conf-dist ${DESTDIR}${EGDIR}
 
 .include "../../mk/bsd.pkg.mk"
