@@ -9,8 +9,8 @@
 
 name="uptimed"
 rcvar=$name
-command="/usr/pkg/sbin/${name}"
-conf_file="/usr/pkg/etc/${name}.conf"
+command="@PREFIX@/sbin/${name}"
+conf_file="@PKG_SYSCONFDIR@/${name}.conf"
 required_files="${conf_file}"
 extra_commands=""
 command_args=""

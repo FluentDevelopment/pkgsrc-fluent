@@ -1,25 +1,40 @@
-# $NetBSD: Makefile,v 1.6 2013/05/10 08:20:04 ahp-nils Exp $
+# $NetBSD$
 #
 
 DISTNAME=	uptimed-0.3.17
 CATEGORIES=	sysutils
-MASTER_SITES=	http://podgorny.cz/uptimed/releases/
-EXTRACT_SUFX=	.tar.bz2
+MASTER_SITES=	${MASTER_SITE_GITHUB:=rpodgorny/}
+GITHUB_TAG=	v${PKGVERSION_NOREV}
 
-MAINTAINER=		joe@joe.cz
+MAINTAINER=		pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=		http://podgorny.cz/uptimed/
 COMMENT=		Keeps track of current and past system uptimes
-
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
-EGDIR=			share/examples/${PKGBASE}
-INSTALLATION_DIRS=	bin sbin lib ${PKGMANDIR}/man2 ${PKGMANDIR}/man8
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+
+USE_TOOLS+=		aclocal
+USE_TOOLS+=		autoconf
+USE_TOOLS+=		autoheader
+USE_TOOLS+=		automake
+
+EGDIR=			${PREFIX}/share/examples/${PKGBASE}
+INSTALLATION_DIRS=	bin sbin lib ${PKGMANDIR}/man1 ${PKGMANDIR}/man8
 INSTALLATION_DIRS+=	share/examples/rc.d ${EGDIR}
+
+OWN_DIRS=		${VARABSE}/spool/uptimed
 
 RCD_SCRIPTS=		uptimed
 CONF_FILES=		${EGDIR}/uptimed.conf-dist ${PKG_SYSCONFDIR}/uptimed.conf
+
+pre-configure:
+	set -e; cd ${WRKSRC}; \
+	aclocal; autoheader; libtoolize; automake -a --foreign -i; autoconf
+
+post-install:
+	${INSTALL_DATA} ${WRKSRC}/etc/uptimed.conf-dist ${DESTDIR}${EGDIR}
 
 .include "../../mk/bsd.pkg.mk"
