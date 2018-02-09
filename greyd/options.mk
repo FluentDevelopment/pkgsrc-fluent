@@ -51,9 +51,8 @@ CONFIGURE_ENV+=	 	BDB_LIB=${BDB_LIBS:S/^-l//:M*:Q}
 
 # TODO: The DB dir... how does this work in relation to the chroot?
 GREYD_DBDIR+=		${VARBASE}/db/greyd
-OWN_DIRS+=		${GREYD_DBDIR}
-# TODO: Do we need to install this folder? How do we set appropriate perms on it?
-INSTALLATION_DIRS+=	${GREYD_DBDIR}
+# TODO: check that these permissions are correct
+OWN_DIRS_PERMS+=	${GREYD_DBDIR} ${GREYD_USER} ${GREYD_GROUP} 0700
 
 .endif
 

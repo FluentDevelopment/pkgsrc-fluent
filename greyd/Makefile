@@ -10,8 +10,10 @@ HOMEPAGE=		http://greyd.org/
 LICENSE=		isc
 COMMENT=		Portable, firewall-integrated SMTP spam deferral & greylisting daemon
 
-PKG_GROUPS=		greyd
-PKG_USERS=		greyd:greyd
+GREYD_USER=		greyd
+GREYD_GROUP=		greyd
+PKG_GROUPS=		${GREYD_GROUP}
+PKG_USERS=		${GREYD_USER}:${GREYD_GROUP}
 PKG_GECOS.greyd=	Greylisting Daemon User
 PKG_HOME.greyd=		${GREYD_HOME}
 
