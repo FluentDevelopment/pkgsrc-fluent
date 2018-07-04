@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.236 2017/12/14 20:44:20 tron Exp $
+# $NetBSD: Makefile,v 1.238 2018/03/29 11:08:44 wiz Exp $
 
-DISTNAME=	openssl-1.0.2n
+DISTNAME=	openssl-1.0.2o
 FLUENTREVISION=	1
 PKGNAME=	${DISTNAME:C/$/fd${FLUENTREVISION}/}
-PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://www.openssl.org/source/
 
@@ -13,8 +12,6 @@ COMMENT=	Secure Socket Layer and cryptographic library
 LICENSE=	openssl
 
 CONFLICTS=	SSLeay-[0-9]* ssleay-[0-9]*
-
-CRYPTO=		yes
 
 BUILD_DEPENDS+=	p5-Perl4-CoreLibs-[0-9]*:../../devel/p5-Perl4-CoreLibs
 
