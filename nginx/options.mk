@@ -5,7 +5,8 @@ PKG_SUPPORTED_OPTIONS=		dav flv gtools inet6 luajit mail-proxy memcache naxsi \
 				pcre push realip ssl sub uwsgi image-filter \
 				debug status nginx-autodetect-cflags echo \
 				set-misc headers-more array-var encrypted-session \
-				form-input perl gzip http2 auth-request rtmp spdy brotli
+				form-input perl gzip http2 auth-request secure-link rtmp \
+				spdy brotli
 PKG_OPTIONS_LEGACY_OPTS+=	v2:http2
 
 PKG_SUGGESTED_OPTIONS=	inet6 pcre ssl
@@ -104,7 +105,7 @@ CONFIGURE_ENV+=		LUAJIT_INC=${PREFIX}/include/luajit-2.0
 CONFIGURE_ARGS+=	--add-module=../${LUA_DISTNAME}
 .endif
 .if !empty(PKG_OPTIONS:Mluajit) || make(makesum)
-LUA_VERSION=		0.10.10
+LUA_VERSION=		0.10.13
 LUA_DISTNAME=		lua-nginx-module-${LUA_VERSION}
 LUA_DISTFILE=		${LUA_DISTNAME}.tar.gz
 SITES.${LUA_DISTFILE}=	-https://github.com/openresty/lua-nginx-module/archive/v${LUA_VERSION}.tar.gz
@@ -126,7 +127,7 @@ DISTFILES+=		${ECHOMOD_DISTFILE}
 CONFIGURE_ARGS+=	--add-module=../${SETMISC_DISTNAME}
 .endif
 .if !empty(PKG_OPTIONS:Mset-misc) || make(makesum)
-SETMISC_VERSION=	0.31
+SETMISC_VERSION=	0.32
 SETMISC_DISTNAME=	set-misc-nginx-module-${SETMISC_VERSION}
 SETMISC_DISTFILE=	${SETMISC_DISTNAME}.tar.gz
 SITES.${SETMISC_DISTFILE}=	-https://github.com/openresty/set-misc-nginx-module/archive/v${SETMISC_VERSION}.tar.gz
@@ -148,7 +149,7 @@ DISTFILES+=		${ARRAYVAR_DISTFILE}
 CONFIGURE_ARGS+=	--add-module=../${ENCSESS_DISTNAME}
 .endif
 .if !empty(PKG_OPTIONS:Mencrypted-session) || make(makesum)
-ENCSESS_VERSION=	0.06
+ENCSESS_VERSION=	0.08
 ENCSESS_DISTNAME=	encrypted-session-nginx-module-${ENCSESS_VERSION}
 ENCSESS_DISTFILE=	${ENCSESS_DISTNAME}.tar.gz
 SITES.${ENCSESS_DISTFILE}=	-https://github.com/openresty/encrypted-session-nginx-module/archive/v${ENCSESS_VERSION}.tar.gz
@@ -170,7 +171,7 @@ DISTFILES+=		${FORMINPUT_DISTFILE}
 CONFIGURE_ARGS+=	--add-module=../${HEADMORE_DISTNAME}
 .endif
 .if !empty(PKG_OPTIONS:Mheaders-more) || make(makesum)
-HEADMORE_VERSION=	0.32
+HEADMORE_VERSION=	0.33
 HEADMORE_DISTNAME=	headers-more-nginx-module-${HEADMORE_VERSION}
 HEADMORE_DISTFILE=	${HEADMORE_DISTNAME}.tar.gz
 SITES.${HEADMORE_DISTFILE}=	-https://github.com/openresty/headers-more-nginx-module/archive/v${HEADMORE_VERSION}.tar.gz
@@ -188,7 +189,7 @@ CONFIGURE_ARGS+=	--without-http_uwsgi_module
 CONFIGURE_ARGS+=	--add-module=../nchan-${PUSH_VERSION}
 .endif
 .if !empty(PKG_OPTIONS:Mpush) || make(makesum)
-PUSH_VERSION=		1.1.8
+PUSH_VERSION=		1.1.13 # 1.1.15 needs memrchr(): https://github.com/slact/nchan/issues/441
 PUSH_DISTNAME=		nginx_http_push_module-${PUSH_VERSION}
 PUSH_DISTFILE=		${PUSH_DISTNAME}.tar.gz
 SITES.${PUSH_DISTFILE}=	-https://github.com/slact/nchan/archive/v${PUSH_VERSION}.tar.gz
@@ -221,11 +222,15 @@ CONFIGURE_ARGS+=	--with-http_gzip_static_module
 CONFIGURE_ARGS+=	--with-http_auth_request_module
 .endif
 
+.if !empty(PKG_OPTIONS:Msecure-link)
+CONFIGURE_ARGS+=	--with-http_secure_link_module
+.endif
+
 .if !empty(PKG_OPTIONS:Mrtmp)
 CONFIGURE_ARGS+=	--add-module=../${RTMP_DISTNAME}
 .endif
 .if !empty(PKG_OPTIONS:Mrtmp) || make(makesum)
-RTMP_VERSION=		1.2.0
+RTMP_VERSION=		1.2.1
 RTMP_DISTNAME=		nginx-rtmp-module-${RTMP_VERSION}
 RTMP_DISTFILE=		${RTMP_DISTNAME}.tar.gz
 SITES.${RTMP_DISTFILE}=	-https://github.com/arut/nginx-rtmp-module/archive/v${RTMP_VERSION}.tar.gz
@@ -237,7 +242,7 @@ CONFIGURE_ARGS+=	--with-http_spdy_module
 .endif
 
 .if !empty(PKG_OPTIONS:Mspdy) || make(makesum)
-V2SPDY_PATCH=		nginx__1.11.11_http2_spdy.patch
+V2SPDY_PATCH=		nginx__1.13.0_http2_spdy.patch
 PATCHFILES+=		${V2SPDY_PATCH}
 SITES.${V2SPDY_PATCH}=	https://github.com/cloudflare/sslconfig/raw/master/patches/
 PATCH_DIST_STRIP.${V2SPDY_PATCH}= -p1
