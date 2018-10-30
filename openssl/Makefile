@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.238 2018/03/29 11:08:44 wiz Exp $
+# $NetBSD: Makefile,v 1.240 2018/09/12 12:44:17 fhajny Exp $
 
-DISTNAME=	openssl-1.0.2o
+DISTNAME=	openssl-1.0.2p
 FLUENTREVISION=	1
 PKGNAME=	${DISTNAME:C/$/fd${FLUENTREVISION}/}
 CATEGORIES=	security
