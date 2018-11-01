@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	rake-compiler-1.0.3
+DISTNAME=	rake-compiler-1.0.5
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc@fluentdevelopment.com.au
