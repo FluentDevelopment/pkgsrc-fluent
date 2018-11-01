@@ -8,7 +8,7 @@ HOMEPAGE=	http://github.com/intridea/omniauth
 COMMENT=	A generalized Rack framework for multiple-provider authentication
 LICENSE=	mit
 
-DEPENDS+=	${RUBY_PKGPREFIX}-hashie>=3.4.6<3.6:../../misc/ruby-hashie
+DEPENDS+=	${RUBY_PKGPREFIX}-hashie35>=3.4.6<3.6:../../fluent/ruby-hashie35
 DEPENDS+=	${RUBY_PKGPREFIX}-rack16>=1.6.2<3:../../www/ruby-rack16
 
 RUBY_RDOC_REQD=	3.0
