@@ -21,3 +21,17 @@ $NetBSD$
          {
              ret = sscanf(cidr, "%39[^/]/%u", parsed, &maskbits);
              if(ret != 2 || maskbits == 0 || maskbits > IP_MAX_MASKBITS)
+@@ -147,7 +151,13 @@ Mod_fw_replace(FW_handle_T handle, const
+     }
+ 
+     npf_table_insert(ncf, nt);
++
++#if defined(__NetBSD__) && __NetBSD_Version__ <= 799005200
+     npf_config_submit(ncf, fwh->npfdev);
++#else
++    /* TODO: handle errors returned from npf_config_submit by passing npf_error_t * */
++    npf_config_submit(ncf, fwh->npfdev, NULL);
++#endif
+     npf_config_destroy(ncf);
+     npf_table_destroy(nt);
+     nt = NULL;
