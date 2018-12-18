@@ -1,0 +1,12 @@
+@comment $NetBSD$
+${PYSITELIB}/${EGG_INFODIR}/PKG-INFO
+${PYSITELIB}/${EGG_INFODIR}/SOURCES.txt
+${PYSITELIB}/${EGG_INFODIR}/dependency_links.txt
+${PYSITELIB}/${EGG_INFODIR}/requires.txt
+${PYSITELIB}/${EGG_INFODIR}/top_level.txt
+${PYSITELIB}/jsonlines/__init__.py
+${PYSITELIB}/jsonlines/__init__.pyc
+${PYSITELIB}/jsonlines/__init__.pyo
+${PYSITELIB}/jsonlines/jsonlines.py
+${PYSITELIB}/jsonlines/jsonlines.pyc
+${PYSITELIB}/jsonlines/jsonlines.pyo
