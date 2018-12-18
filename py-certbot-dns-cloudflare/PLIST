@@ -1,0 +1,16 @@
+@comment $NetBSD$
+${PYSITELIB}/${EGG_INFODIR}/PKG-INFO
+${PYSITELIB}/${EGG_INFODIR}/SOURCES.txt
+${PYSITELIB}/${EGG_INFODIR}/dependency_links.txt
+${PYSITELIB}/${EGG_INFODIR}/entry_points.txt
+${PYSITELIB}/${EGG_INFODIR}/requires.txt
+${PYSITELIB}/${EGG_INFODIR}/top_level.txt
+${PYSITELIB}/certbot_dns_cloudflare/__init__.py
+${PYSITELIB}/certbot_dns_cloudflare/__init__.pyc
+${PYSITELIB}/certbot_dns_cloudflare/__init__.pyo
+${PYSITELIB}/certbot_dns_cloudflare/dns_cloudflare.py
+${PYSITELIB}/certbot_dns_cloudflare/dns_cloudflare.pyc
+${PYSITELIB}/certbot_dns_cloudflare/dns_cloudflare.pyo
+${PYSITELIB}/certbot_dns_cloudflare/dns_cloudflare_test.py
+${PYSITELIB}/certbot_dns_cloudflare/dns_cloudflare_test.pyc
+${PYSITELIB}/certbot_dns_cloudflare/dns_cloudflare_test.pyo

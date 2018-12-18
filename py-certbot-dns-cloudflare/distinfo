@@ -1,0 +1,6 @@
+$NetBSD$
+
+SHA1 (certbot-dns-cloudflare-0.29.1.tar.gz) = 728b966365f82cfc488f2d2f81e401cd660d44fc
+RMD160 (certbot-dns-cloudflare-0.29.1.tar.gz) = 675e60fa366663744c7c6acf13b474d99893f8b4
+SHA512 (certbot-dns-cloudflare-0.29.1.tar.gz) = 91ab286381c687473e15d8d1638e4955bde3185a547127c05d2fcff8e3bdc437aa18ce19d5be7d096491ae6e9b8273aca12b0f667d5f5c43d3aa591c3e543062
+Size (certbot-dns-cloudflare-0.29.1.tar.gz) = 13387 bytes
