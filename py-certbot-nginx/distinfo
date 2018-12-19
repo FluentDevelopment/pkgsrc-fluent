@@ -1,0 +1,6 @@
+$NetBSD$
+
+SHA1 (certbot-nginx-0.29.1.tar.gz) = 17da449a257562eb6c134f7cdd9c6237b258dea9
+RMD160 (certbot-nginx-0.29.1.tar.gz) = e285968e4f904b9580510ec44f15511a8b410c11
+SHA512 (certbot-nginx-0.29.1.tar.gz) = 680fbb9fa82b3187065d38807a99a1d90892b54305477b69b0ac5d7affcfedfd982d94a3aa794238c76859f3281930f9b7b4b1d81bbe85d2b131c88a9dd5f8d0
+Size (certbot-nginx-0.29.1.tar.gz) = 78626 bytes
