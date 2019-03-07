@@ -9,6 +9,7 @@ GITHUB_TAG=	v${PKGVERSION_NOREV}
 MAINTAINER=		pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=		http://podgorny.cz/uptimed/
 COMMENT=		Keeps track of current and past system uptimes
+LICENSE=		gnu-gpl-v2
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
