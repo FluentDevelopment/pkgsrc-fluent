@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-DISTNAME=	uptimed-0.4.0
+DISTNAME=	uptimed-0.4.1
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_GITHUB:=rpodgorny/}
 GITHUB_TAG=	v${PKGVERSION_NOREV}
