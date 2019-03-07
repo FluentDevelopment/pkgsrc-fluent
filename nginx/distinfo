@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.64 2018/08/24 18:27:07 adam Exp $
+$NetBSD: distinfo,v 1.67 2018/12/17 22:11:46 jperkin Exp $
 
 SHA1 (array-var-nginx-module-0.05.tar.gz) = c69fac77814947009ab783a471783b3c95a63a26
 RMD160 (array-var-nginx-module-0.05.tar.gz) = 89bd4efc04864e3e90781588a337338951ec8733
@@ -32,10 +32,10 @@ SHA1 (naxsi-0.56.tar.gz) = 42ce137bd3e52a612793bcea43f3ffbb8376910a
 RMD160 (naxsi-0.56.tar.gz) = a5c97194ef3db415a4bab07c44f9e9f2860b9e1a
 SHA512 (naxsi-0.56.tar.gz) = 4660751849bce303af6010b7257532404710106a94817e78d4bc4b566f8019620f24f30207f1d4366b88132a5124e34b164dc67ed80b6710f4bad66115564cbd
 Size (naxsi-0.56.tar.gz) = 192120 bytes
-SHA1 (nginx-1.14.0.tar.gz) = 016ab1a12c9a0c9444f9073e4300223ffd6fadbe
-RMD160 (nginx-1.14.0.tar.gz) = aa5445ef786c83de81f9b98b261caf1bd13e2d89
-SHA512 (nginx-1.14.0.tar.gz) = 40f086c9f741727e6f55802b6c3a66f081f7c49c38646dc1491aa3e3c35bae12b65ea6594386609fc849bcd99a60d7cd8ecb3f8d519e0e9ab8db01d653e930e9
-Size (nginx-1.14.0.tar.gz) = 1016272 bytes
+SHA1 (nginx-1.14.2.tar.gz) = 4b4df8786b44e79cffd2e002a070e27fd774a17f
+RMD160 (nginx-1.14.2.tar.gz) = 175e878b47902696c28ff9ac8ab551d9c211642e
+SHA512 (nginx-1.14.2.tar.gz) = d8362dbd86435657d6b13156bd6ad1b251d2ab10bc11cdda959b142dd6120b087e4b314f0025d9bbcc88529cb4b9407fb4df1cfae5d081b7ea1db51ccfc2dbe7
+Size (nginx-1.14.2.tar.gz) = 1015384 bytes
 SHA1 (nginx-rtmp-module-1.2.1.tar.gz) = 7c6ae1afc117e3bf946b0d81f99d41fe538a7245
 RMD160 (nginx-rtmp-module-1.2.1.tar.gz) = 5fc0b4ac0b2c0a6d70957a5256754db8a9e934cf
 SHA512 (nginx-rtmp-module-1.2.1.tar.gz) = 4a0af5e9afa4deb0b53de8de7ddb2cfa6430d372e1ef9e421f01b509548bd134d427345442ac1ce667338cc2a1484dc2ab732e316e878ac7d3537dc527d5f922
@@ -44,10 +44,10 @@ SHA1 (nginx__1.13.0_http2_spdy.patch) = 93805ea385e04d20ab74de773182b69af605b669
 RMD160 (nginx__1.13.0_http2_spdy.patch) = e618400fbe5e5e5b98925946f9fcf2ec04b0e229
 SHA512 (nginx__1.13.0_http2_spdy.patch) = 681f92c2e621c12816d8fd57350e22f36dd191d4410c3206663778af6cf2b2b68fd3b43e7f4d3f4ec0526c6a8fd2cdc6632ba19f3aba1f79c932a9f425527a1f
 Size (nginx__1.13.0_http2_spdy.patch) = 187527 bytes
-SHA1 (nginx_http_push_module-1.2.1.tar.gz) = 7144874b2bb8adb57b93da31ba2276bdfdeede33
-RMD160 (nginx_http_push_module-1.2.1.tar.gz) = aeae5bbb2becaa83a52ccf1350f7b8ee170ab388
-SHA512 (nginx_http_push_module-1.2.1.tar.gz) = 172557a10a41b573faaa283508796b0482640c0236ba284539b2e5c07d51d3d6b52e8b33c0ee89871ebd4a895aaf637cb340d86e1313336eb644c6cde263b06d
-Size (nginx_http_push_module-1.2.1.tar.gz) = 645188 bytes
+SHA1 (nginx_http_push_module-1.2.3.tar.gz) = bf458b75961f3f3e4bfdcde39f0a9a00cc701325
+RMD160 (nginx_http_push_module-1.2.3.tar.gz) = 560155e772e58075ca4f8efcaa01bfa2be5731e4
+SHA512 (nginx_http_push_module-1.2.3.tar.gz) = e2f23ec82669af4be77cb4d6ee24347fc8438b658a0d16d42d6a8e81b074685f5cd1d2060ccf314e610f9d3aee3720181243133af3e450d2c0d7105a1873f13f
+Size (nginx_http_push_module-1.2.3.tar.gz) = 669479 bytes
 SHA1 (ngx_brotli-master.tar.gz) = 6a3d5aaf03872e6374c161f5f0bd0ba9c46835ef
 RMD160 (ngx_brotli-master.tar.gz) = 90ca9555ae400308d5299c24161307313880bb1a
 SHA512 (ngx_brotli-master.tar.gz) = 8f9d4932e24aa1519ff0906489b6cdc7d1851bfc480ebce5ffda9ef21036d45c5e593daa7a58c650abb5ebc9f079a5830c501e1a18a9f331c576bede541c5ca3
