@@ -1,7 +1,7 @@
 # $NetBSD$
 
+DISTNAME=	certbot-dns-cloudflare-0.32.0
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
-DISTNAME=	certbot-dns-cloudflare-0.29.1
 CATEGORIES=	security python
 MASTER_SITES=	${MASTER_SITE_PYPI:=c/certbot-dns-cloudflare/}
 
@@ -9,7 +9,7 @@ COMMENT=	Cloudflare DNS Authenticator plugin for Certbot
 MAINTAINER=	pkgsrc@fluentdevelopment.com.au
 LICENSE=	apache-2.0
 
-DEPENDS+=	${PYPKGPREFIX}-acme>=0.21.1:../../security/py-acme
+DEPENDS+=	${PYPKGPREFIX}-acme>=0.25.0:../../security/py-acme
 DEPENDS+=	${PYPKGPREFIX}-certbot>=0.21.1:../../security/py-certbot
 DEPENDS+=	${PYPKGPREFIX}-cloudflare>=1.5.1:../../fluent/py-cloudflare
 DEPENDS+=	${PYPKGPREFIX}-mock-[0-9]*:../../devel/py-mock

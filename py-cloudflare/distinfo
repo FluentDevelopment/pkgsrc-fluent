@@ -1,6 +1,6 @@
 $NetBSD$
 
-SHA1 (cloudflare-2.1.0.tar.gz) = 957ef99fe7337ec6de0058c3057e936a3e2961d9
-RMD160 (cloudflare-2.1.0.tar.gz) = 67faf76b5b8a05dec03a9275e1ed197eae394fa4
-SHA512 (cloudflare-2.1.0.tar.gz) = 80ecd7da82398bd3dc4533f0ff1b36d899f7d75a68c56dbd036ada99909791a7dbd77b92d0682745d7c5dd2593ec79ad62876d38bd08012d02955d20e0fa6ccf
-Size (cloudflare-2.1.0.tar.gz) = 53351 bytes
+SHA1 (cloudflare-2.3.0.tar.gz) = aeaf04c8c60f4c4fbc23aa958c06873da54e46fc
+RMD160 (cloudflare-2.3.0.tar.gz) = e846dd7d88e89cbdf1784308d55ad9ebda7527ce
+SHA512 (cloudflare-2.3.0.tar.gz) = 3e3f5f8ae56fa0989849a7ed3c69e1037f0478060a19fcaaca4af781e085c814b9d0d4631ea50888aeff2838a17fff93cfff0770dc84fb06344b09a45d14d5ea
+Size (cloudflare-2.3.0.tar.gz) = 52746 bytes

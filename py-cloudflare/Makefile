@@ -1,7 +1,7 @@
 # $NetBSD$
 
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
-DISTNAME=	cloudflare-2.1.0
+DISTNAME=	cloudflare-2.3.0
 CATEGORIES=	security python
 MASTER_SITES=	${MASTER_SITE_PYPI:=c/cloudflare/}
 
