@@ -22,7 +22,7 @@ PKG_SUGGESTED_OPTIONS+=		npf
     !empty(MACHINE_PLATFORM:MFreeBSD-5.[3-5].*-*) || \
     !empty(MACHINE_PLATFORM:MFreeBSD-[6-9].*-*) || \
     !empty(MACHINE_PLATFORM:MFreeBSD-1[0-9].*-*) || \
-    !empty(MACHINE_PLATFORM:MDragonflyBSD-[6-9].*-*)
+    !empty(MACHINE_PLATFORM:MDragonFly-[6-9].*-*)
 PKG_SUGGESTED_OPTIONS+=		pf
 .endif
 
@@ -50,7 +50,8 @@ CONFIGURE_ENV+=	 	BDB_LIB_DIR=${BDBBASE}/lib
 CONFIGURE_ENV+=	 	BDB_LIB=${BDB_LIBS:S/^-l//:M*:Q}
 
 # TODO: The DB dir... how does this work in relation to the chroot?
-GREYD_DBDIR+=		${VARBASE}/db/greyd
+GREYD_DBDIR?=		${VARBASE}/db/greyd
+BUILD_DEFS+=		VARBASE
 # TODO: check that these permissions are correct
 OWN_DIRS_PERMS+=	${GREYD_DBDIR} ${GREYD_USER} ${GREYD_GROUP} 0700
 
@@ -103,7 +104,7 @@ CONFIGURE_ARGS+=	--with-pf
      empty(MACHINE_PLATFORM:MFreeBSD-5.[3-5].*-*) && \
      empty(MACHINE_PLATFORM:MFreeBSD-[6-9].*-*) && \
      empty(MACHINE_PLATFORM:MFreeBSD-1[0-9].*-*) && \
-     empty(MACHINE_PLATFORM:MDragonflyBSD-[6-9].*-*)
+     empty(MACHINE_PLATFORM:MDragonFly-[6-9].*-*)
 PKG_FAIL_REASON=	"pf not available on this system"
 . endif
 .endif

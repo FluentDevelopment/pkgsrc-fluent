@@ -1,5 +1,8 @@
 $NetBSD$
 
+Support for various combinations of NPF API variants which have
+differing function signatures on NetBSD 6, 7 & 8.
+
 --- drivers/npf.c.orig	2015-06-22 05:21:14.000000000 +0000
 +++ drivers/npf.c
 @@ -130,12 +130,16 @@ Mod_fw_replace(FW_handle_T handle, const

@@ -7,8 +7,8 @@ GITHUB_TAG=		v${PKGVERSION_NOREV}
 
 MAINTAINER=		pkgsrc@fluentdevelopment.com.au
 HOMEPAGE=		http://greyd.org/
-LICENSE=		isc
 COMMENT=		Portable, firewall-integrated SMTP spam deferral & greylisting daemon
+LICENSE=		isc
 
 GREYD_USER=		greyd
 GREYD_GROUP=		greyd
@@ -53,7 +53,7 @@ OWN_DIRS+=		${GREYD_CONFDIR}
 FILES_SUBST+=		GREYD_CONF=${GREYD_CONF:Q}
 
 SUBST_CLASSES+=		fix-paths
-SUBST_STAGE.fix-paths=	post-patch
+SUBST_STAGE.fix-paths=	pre-configure
 SUBST_FILES.fix-paths=	doc/greyd.8
 SUBST_FILES.fix-paths+=	etc/greyd.conf.in
 SUBST_SED.fix-paths=	-e 's,/etc/greyd,${GREYD_CONFDIR},g'

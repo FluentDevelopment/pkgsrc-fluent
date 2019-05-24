@@ -1,6 +1,7 @@
 $NetBSD$
 
-Allow overriding hard-coded path to chroot without causing a compiler warning.
+Only define GREYD_CHROOT_DIR to default path if not already defined elsewhare (e.g. compile option).
+This allows us to pass -DGREYD_CHROOT_DIR=... to the compiler without triggering a warning.
 
 --- src/constants.h.orig	2015-06-22 05:21:14.000000000 +0000
 +++ src/constants.h
