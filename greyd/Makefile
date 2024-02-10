@@ -10,14 +10,18 @@ HOMEPAGE=		http://greyd.org/
 COMMENT=		Portable, firewall-integrated SMTP spam deferral & greylisting daemon
 LICENSE=		isc
 
-GREYD_USER=		greyd
 GREYD_GROUP=		greyd
-PKG_GROUPS=		${GREYD_GROUP}
-PKG_USERS=		${GREYD_USER}:${GREYD_GROUP}
+GREYD_USER=		greyd
 PKG_GECOS.greyd=	Greylisting Daemon User
 PKG_HOME.greyd=		${GREYD_HOME}
+GREYDB_USER=		greydb
+PKG_GECOS.greydb=	Greylisting Database Daemon User
+PKG_HOME.greydb=	${GREYDB_HOME}
 
-RCD_SCRIPTS=		greyd
+PKG_GROUPS=		${GREYD_GROUP}
+PKG_USERS=		${GREYD_USER}:${GREYD_GROUP} ${GREYDB_USER}:${GREYD_GROUP}
+
+RCD_SCRIPTS=		greyd greylogd
 
 .include "options.mk"
 
@@ -25,8 +29,8 @@ GNU_CONFIGURE=          yes
 CONFIGURE_ARGS+=        --sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=        --localstatedir=${VARBASE}
 
-CONFIGURE_ENV+= 	GREYD_PIDFILE=${GREYD_HOME}/greyd.pid
-CONFIGURE_ENV+= 	GREYLOGD_PIDFILE=${GREYD_HOME}/greylogd.pid
+#CONFIGURE_ENV+= 	GREYD_PIDFILE=${GREYD_HOME}/greyd.pid
+#CONFIGURE_ENV+= 	GREYLOGD_PIDFILE=${GREYD_HOME}/greylogd.pid
 
 USE_TOOLS+= 		aclocal
 USE_TOOLS+= 		autoheader
@@ -34,6 +38,7 @@ USE_TOOLS+= 		autoconf
 USE_TOOLS+= 		automake
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake
+USE_TOOLS+=		awk:run
 MAKE_PROGRAM=		gmake
 
 CPPFLAGS+=             -DGREYD_CHROOT_DIR=\"${GREYD_HOME}\"
@@ -41,16 +46,19 @@ CPPFLAGS+=             -DGREYD_CHROOT_DIR=\"${GREYD_HOME}\"
 BUILD_DEFS+=		VARBASE
 
 GREYD_HOME=		${VARBASE}/chroot/greyd
+GREYDB_HOME=		${VARBASE}/db/greyd
 
 GREYD_CONFDIR=		${PKG_SYSCONFDIR}/greyd
 GREYD_CONF=		${GREYD_CONFDIR}/greyd.conf
 CONF_FILES=		${PREFIX}/share/examples/greyd/greyd.conf ${GREYD_CONF}
 
-OWN_DIRS=		${GREYD_HOME}
+OWN_DIRS_PERMS+=	${GREYD_HOME} ${GREYD_USER} ${GREYD_GROUP} 0700
+OWN_DIRS_PERMS+=	${GREYDB_HOME} ${GREYDB_USER} ${GREYD_GROUP} 0700
 OWN_DIRS+=		${GREYD_CONFDIR}
 
 # We use @GREYD_CONF@ in the rc.d script
 FILES_SUBST+=		GREYD_CONF=${GREYD_CONF:Q}
+FILES_SUBST+=		AWK=${TOOLS_PATH.awk:Q}
 
 SUBST_CLASSES+=		fix-paths
 SUBST_STAGE.fix-paths=	pre-configure
